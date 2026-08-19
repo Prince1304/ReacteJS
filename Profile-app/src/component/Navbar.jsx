@@ -1,12 +1,13 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { MyContext } from '../App';
+import {Contextdata} from '../App';
 
 const Navbar = () => {
-  const contextData = useContext(MyContext);
+const data = useContext(Contextdata)
+
   return (
     <div id='nav'>
-      <h2>{contextData}</h2>
+      <h2>{data}</h2>
         <Link to='/'>Home</Link>
         <Link to='/abt'>About</Link>
         <Link to='/cnt'>Contact</Link>

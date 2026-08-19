@@ -5,23 +5,22 @@ import Navbar from './component/Navbar';
 import NF from './component/404';
 import Contact from './component/contact';
 import { Route, Routes } from 'react-router-dom';
+import { createContext } from 'react';
 
+
+export const MyContext = createContext();
 const App = () => {
+  const data = 'Prince';
   return (
-    <>
-    <Navbar />
-    <div className="body">
-      <h1></h1>
-    <Routes>
-      <Route path='/' element={<Home />}/>
-      <Route path='/abt' element={<About />}/>
-      <Route path='/cnt' element={<Contact />}/>
-      <Route path='*' element={<NF />}/>
-    </Routes>
-    </div>
-    <h1>This is Footer</h1>
-    </>
-  )
+    <MyContext.Provider value={data}>
+      <Navbar />
+      <div className="body">        
+        <Routes>
+          <Route path='/' element={<Home />}/>
+        </Routes>
+      </div>
+    </MyContext.Provider>
+  );
 }
 
 export default App

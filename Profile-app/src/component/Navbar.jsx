@@ -1,17 +1,16 @@
-import React, { createContext } from 'react'
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom'
-
-const Context = createContext()
+import { MyContext } from '../App';
 
 const Navbar = () => {
+  const contextData = useContext(MyContext);
   return (
-    <Context.Provider value='Prince'>
     <div id='nav'>
+      <h2>{contextData}</h2>
         <Link to='/'>Home</Link>
         <Link to='/abt'>About</Link>
         <Link to='/cnt'>Contact</Link>
     </div>
-    </Context.Provider>
   )
 }
 

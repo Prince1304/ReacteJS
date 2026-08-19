@@ -11,6 +11,7 @@ const App = () => {
     <>
     <Navbar />
     <div className="body">
+      <h1></h1>
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/abt' element={<About />}/>

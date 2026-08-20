@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {pexels_api} from './API/api';
-import {axios} from 'axios';
+import axios from 'axios';
 
 function App() {
   const respo = async ()=>{

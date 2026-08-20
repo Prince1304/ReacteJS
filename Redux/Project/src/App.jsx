@@ -2,12 +2,14 @@ import { useState } from 'react'
 import {pexels_api} from './API/api';
 
 function App() {
-  return (
-    <div>
-      <h1>Testing my API Key:</h1>
-      <p>{!pexels_api?'Api Not Comming':'Api Come'}</p> 
-    </div>
-  )
+  const respo = async ()=>{
+    let data = await fetch('https://api.pexels.com/v1/curated',
+      {params:('car',2,10)},
+      {Authentication:`User ${pexels_api}`}
+    )
+    console.log(data);
+  }
+  respo()
 }
 
 export default App

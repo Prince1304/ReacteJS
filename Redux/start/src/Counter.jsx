@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from './Redux/Features/counter';
 
 export default function Counter() {
     const count = useSelector((state) => state.counter.value);

@@ -1,2 +1,1 @@
-export const pexels_api = import.meta.VITE_PECELS_API; 
-console.log(pexels_api);
+export const pexels_api = import.meta.env.VITE_PEXELS_API; 

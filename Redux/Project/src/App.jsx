@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <h1>Testing my API Key:</h1>
-      <p>{pexels_api}</p> 
+      <p>{!pexels_api?'Api Not Comming':'Api Come'}</p> 
     </div>
   )
 }

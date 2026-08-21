@@ -2,4 +2,17 @@
 
 #root{
   padding-left: 50px;
+  display: flex;
+  gap: 120px;
+}
+
+
+.img{
+  position: relative;
+  width: 165px;
+  height: 245px;
+  border-radius: 10px;
+  background-color: black;
+  top: 10px;
+  left: 10px;
 }

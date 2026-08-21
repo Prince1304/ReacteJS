@@ -15,8 +15,9 @@ const Cards = () => {
                 <div className='container bg-amber-400 w-full h-full rounded-2xl card-body'>
                     <div className="w-42 mt-2 ml-2 absolute rounded-md h-62 bg-amber-950">
                         <img src={img} className='rounded-xl w-full h-full'></img>
-                        <div id="card-text" className='absolute top-40 w-full h-22 overflow-hidden'>
-                            <h1>Prince Kyada</h1>
+                        <div id="card-text" className='absolute top-20 w-full h-42 overflow-hidden'>
+                            <h1 className='mt-20 text-amber-50 ml-2 text-lg font-bold'>Prince Kyada</h1>
+                            <h6 className='font-bold text-white text-sm ml-2'>Frontend Devloper</h6>
                         </div>
                     </div>
                 </div>

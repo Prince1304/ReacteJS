@@ -55,7 +55,7 @@ const data = [
 ]
 
 return (
-  <div className="min-h-screen bg-gray-900 p-8">
+  <div className="min-h-screen">
     {/* Pass the array into the Cards component via the 'users' prop */}
     <Cards users={data} />
   </div>

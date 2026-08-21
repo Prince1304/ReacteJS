@@ -1,4 +1,5 @@
 import React from 'react'
+import img from '../assets/MY PIC.jpeg'
 
 const Cards = () => {
   return (
@@ -12,7 +13,12 @@ const Cards = () => {
             <div className="w-10 h-10 rounded-t-full ml-20 border-t-5 border-b-0 border-amber-100 border-10"></div>
             <div className="container bg-amber-100 w-50 h-70 p-2 rounded-3xl">
                 <div className='container bg-amber-400 w-full h-full rounded-2xl card-body'>
-                    <div className="w-42 mt-2 ml-2 absolute rounded-md h-62 bg-amber-950"><img src='' className='w-full h-full'></img></div>
+                    <div className="w-42 mt-2 ml-2 absolute rounded-md h-62 bg-amber-950">
+                        <img src={img} className='rounded-xl w-full h-full'></img>
+                        <div id="card-text" className='absolute top-40 w-full h-22 overflow-hidden'>
+                            <h1>Prince Kyada</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
